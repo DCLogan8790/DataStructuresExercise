@@ -1,7 +1,8 @@
 // 1a 
 const jedi = [];
 // 1b 
-jedi[jedi.length] = "Luke";
+// jedi[jedi.length] = "Luke";
+jedi[0] = "Luke";
 // 1c
 jedi.push("Obi-Wan Kenobi");
 // 1d
@@ -48,30 +49,33 @@ console.log(droids);
 console.log(starWarsVillains[0][6]);
 
 // 5
-console.log(sithLords.slice(-2, 2));
+console.log(sithLords.slice(-2, -1));
 
 // 6
-const starWarsMovies = [{
-    firstObject: {
+const starWarsMovies = [
+    {
         episodeOne: "The Phantom Menace",
         episodeTwo: "Attack of the Clones",
-        episodeThree: "Revenge of the Sith",
-    },
-    secondObject: {
+        episodeThree: "Revenge of the Sith"
+    }
+    ,
+     {
         episodeFour: "A New Hope",
         episodeFive: "The Empire Strikes Back",
         episodeSix: "Return of the Jedi"
     },
-    thirdObject: {
+    {
         episodeSeven: "The Force Awakens",
         episodeEight: "The Last Jedi",
         episodeNine: "The Rise of Skywalker"
     }
-}]
-;
-console.log(starWarsMovies);
-// 6b
+];
 
+console.log(starWarsMovies);
+
+// 6b
+starWarsMovies.splice(1,0,"Solo","Rogue One");
+console.log(starWarsMovies);
 
 
 
